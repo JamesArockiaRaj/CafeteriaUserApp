@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Tool Bar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbarRL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgitem"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="100dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <!-- Profile image -->
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_black"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Container for name, phone, email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/userNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/red"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                <!-- Phone number -->
+                    <TextView
+                        android:id="@+id/phoneTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8888888888"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="18sp"
+                        android:paddingTop="15dp"
+                        android:drawablePadding="15dp" />
+
+
+                    <!-- Email -->
+                    <TextView
+                        android:id="@+id/mailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="user@gmail.com"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/ic_mail_black"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="18sp"
+                        android:paddingTop="15dp"
+                        android:drawablePadding="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/fcmSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Push Notifications"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/notificationStatusTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Notifications are disabled"
+                    android:layout_below="@id/fcmSwitch"
+                    android:textColor="@color/ash"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ash"
+                    android:layout_below="@id/notificationStatusTv"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

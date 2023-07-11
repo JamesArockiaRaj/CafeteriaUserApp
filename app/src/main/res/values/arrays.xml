@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="location_array" >
+    <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Pune</item>
+        <item>Tirunelveli</item>
+    </string-array>
+</resources>

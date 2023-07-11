@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AtosCafe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="shopLoading">"\t\t\t\t\t\t\t..........  Loading shops for you  .........."</string>
+
+
+</resources>

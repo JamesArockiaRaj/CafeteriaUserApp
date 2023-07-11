@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WhiteOutlineRatingBar" parent="@style/Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressTint">@color/white</item> <!-- Set your desired star color -->
+        <item name="android:progressBackgroundTint">@android:color/white</item> <!-- Set outline color to white -->
+    </style>
+
+</resources>
